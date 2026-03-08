@@ -7,18 +7,20 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
             {Name = "Ruby", Variant = "Gemstone"},
+            {Tier = "Mythic", Variant = "Gemstone","Galxy","Fairy Dust","Lightning","Midnight"},
             -- {Variant = "Leviathan Rage"}, -- Variant Only
             -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
 
         ["Auto Accept Trade"] = true,
-        ["Auto Friend Request"] = false,
+        ["Auto Friend Request"] = true,
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
         ["Whitelist Username"] = {"ElxBetaa","xzkinoy1","xzkinoy2","xzkinoy3","xzkinoy4"},
         ["Category Fish"] = {
             "Secret",
+            "Mythic",
             -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
         },
         ["Fish Name"] = {
@@ -76,7 +78,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            "Mutation Totem"= 45,
+            "Mutation Totem" = 45,
         },
     },
     ["Event"] = {
@@ -112,7 +114,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Buying"] = true,
         ["Buy List"] = {
             "Midnight Bait",
-            "Chroma Bait",
             "Corrupt Bait",
             "Aether Bait",
 			"Floral	Bait",
@@ -140,7 +141,7 @@ _G.FishItConfig = _G.FishItConfig or {
 
     ["ExtremeFpsBoost"] = false,
     ["UltimatePerformance"] = false,
-    ["Disable3DRender"] = false,
+    ["Disable3DRender"] = true,
     ["AutoRemovePlayer"] = true,
 
     ["AutoReconnect"] = false,

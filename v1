@@ -7,7 +7,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
             {Name = "Ruby", Variant = "Gemstone"},
-            {Tier = "Mythic", Variant = "Gemstone","Galxy","Fairy Dust","Lightning","Midnight"},
             -- {Variant = "Leviathan Rage"}, -- Variant Only
             -- {Tier = "Secret", Variant = "Leviathan Rage"},  -- Tier + Variant
         },
@@ -20,7 +19,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Whitelist Username"] = {"ElxBetaa","xzkinoy1","xzkinoy2","xzkinoy3","xzkinoy4"},
         ["Category Fish"] = {
             "Secret",
-            "Mythic",
             -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
         },
         ["Fish Name"] = {
@@ -56,11 +54,13 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1478056179547766914/HK0cMDNeY_iAior--mRqtxd2lHsLHaHqTmbmlyuYxBfRj4BiJcc55-8koh_w9XEvU4K1",
-        ["Auto Sending"] = true,
-        ["Category"] = {"Secret"},
-
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1478056179547766914/HK0cMDNeY_iAior--mRqtxd2lHsLHaHqTmbmlyuYxBfRj4BiJcc55-8koh_w9XEvU4K1",
+        ["Auto Sending"] = false,
+        ["Category"] = {
+            "Secret",
+            {Name = "Ruby", Variant = "Gemstone"},
+        },
+        ["Link Webhook"] = "ttps://discord.com/api/webhooks/1450015640487329793/wFqR24DvT3VCTMOTKuyO6j0KTan6LCdxTgQWct9C692sziO8kolyV5T5qnF_Beyuerjt",
+        ["Link Webhook Quest Complete"] = "ttps://discord.com/api/webhooks/1450015640487329793/wFqR24DvT3VCTMOTKuyO6j0KTan6LCdxTgQWct9C692sziO8kolyV5T5qnF_Beyuerjt",
     },
     ["Weather"] = {
         ["Auto Buying"] = true,

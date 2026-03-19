@@ -19,7 +19,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
-        ["Whitelist Username"] = {"aaxstoresotong","aaxstoresotong2","aaxstorethin","aaxstorethin1","aaxstorethin2"},
+        ["Whitelist Username"] = {"ElxBetaa","xzkinoy1","xzkinoy2","xzkinoy3","xzkinoy4","apipi0210"},
         ["Category Fish"] = {
             "Secret",
             -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
@@ -68,14 +68,14 @@ _G.FishItConfig = _G.FishItConfig or {
             "Secret",
             {Name = "Ruby", Variant = "Gemstone"},
         },
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1450015640487329793/wFqR24DvT3VCTMOTKuyO6j0KTan6LCdxTgQWct9C692sziO8kolyV5T5qnF_Beyuerjt",
-        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1450015640487329793/wFqR24DvT3VCTMOTKuyO6j0KTan6LCdxTgQWct9C692sziO8kolyV5T5qnF_Beyuerjt",
+        ["Link Webhook"] = "https://discord.com/api/webhooks/1484246068920320053/6NzM7q5qIM3TJzjL2nV9hA_EyV_3JTkNBzSDyH7aXFAcC6uVrXAAxASSruMSQA1evKG9",
+        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1484246068920320053/6NzM7q5qIM3TJzjL2nV9hA_EyV_3JTkNBzSDyH7aXFAcC6uVrXAAxASSruMSQA1evKG9",
     },
     ["Weather"] = {
         ["Auto Buying"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Weather List"] = {
-            "Wind",
+            "Wind","strom","cloudy",
         },
     },
     ["Potions"] = {

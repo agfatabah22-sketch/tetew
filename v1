@@ -14,7 +14,7 @@ getgenv().VO_CONFIG = {
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
-    AutoFish = true,
+    AutoFish = false,
     PrioritizeCraft = "Tealwood Monster Bait",  -- "Rainbow Trout" | "Tealwood Monster Bait"
     BuyIrishSetter = false,
 
@@ -42,7 +42,7 @@ getgenv().VO_CONFIG = {
     AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
 
     -- === BUY PETS ===
-    BuyPets = true,
+    BuyPets = false,
     BuyPetName = {"River Otter", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===

@@ -9,7 +9,7 @@ getgenv().VO_CONFIG = {
     PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Crystal Egg", "Cracked Egg"},  -- Priority order: first egg tried, then second, etc.
+    EggName = {"Crystal Egg"},  -- Priority order: first egg tried, then second, etc.
     PetFarmList = {}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "2D Kitty",
 
@@ -43,7 +43,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Cracked Egg", "Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
     BuyBoxes = false,

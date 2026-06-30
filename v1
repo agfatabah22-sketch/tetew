@@ -4,17 +4,17 @@ getgenv().VO_CONFIG = {
     DeviceName = "",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
-    EggFarm = false,
+    PotFarm = false,
+    EggFarm = true,
     PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Crystal Egg"},  -- Priority order: first egg tried, then second, etc.
+    EggName = {"Crystal Egg", "Cracked Egg"},  -- Priority order: first egg tried, then second, etc.
     PetFarmList = {}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
-    AutoFish = true,
+    AutoFish = false,
     PrioritizeCraft = "Tealwood Monster Bait",  -- "Rainbow Trout" | "Tealwood Monster Bait"
     BuyIrishSetter = false,
 
@@ -25,7 +25,7 @@ getgenv().VO_CONFIG = {
     PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
-    PetReleaser = false,
+    PetReleaser = true,
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {"Stygian Owl", "Pomeranian"}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
@@ -42,8 +42,8 @@ getgenv().VO_CONFIG = {
     AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
 
     -- === BUY PETS ===
-    BuyPets = false,
-    BuyPetName = {"Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPets = true,
+    BuyPetName = {"Crystal Egg", "Cracked Egg"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
     BuyBoxes = false,

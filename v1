@@ -39,7 +39,7 @@ getgenv().VO_CONFIG = {
     AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
-    AutoFuse = false,
+    AutoFuse = true,
     AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
 
     -- === BUY PETS ===

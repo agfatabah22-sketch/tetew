@@ -43,11 +43,11 @@ getgenv().VO_CONFIG = {
     AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
 
     -- === BUY PETS ===
-    BuyPets = false,
-    BuyPetName = {"Crystal Egg", "Cracked Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPets = true,
+    BuyPetName = {"River Otter"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
-    BuyBoxes = true,
+    BuyBoxes = false,
     BoxName = "Oakee Box",   -- Name of the box to buy/open
     OpenBoxes = true,
 

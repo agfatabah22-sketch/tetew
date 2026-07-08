@@ -9,15 +9,17 @@ getgenv().VO_CONFIG = {
     PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Crystal Egg", "Cracked Egg"},  -- Priority order: first egg tried, then second, etc.
+    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
     PetFarmList = {}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
-    AutoFish = false,
-    PrioritizeCraft = "Tealwood Monster Bait",  -- "Rainbow Trout" | "Tealwood Monster Bait"
+    PrioritizeCraft = "Tealwood Monster Bait",  -- "Rainbow Trout" | "Tealwood Monster Bait" | nil (auto). AutoFish always runs.
+    Craft = false,             -- If false, collect karps only — skip purchases (Tealwood bait / Rainbow Trout)
+    AutoSellFish = false,     -- Sell all karps each pass; disables tealwood/rainbow purchases
     BuyIrishSetter = false,
-    AutoSkydive = false,
+    AutoSkydive = false,      -- [RENDERS MAIN MAP] Complete Skydive Minigame
+    AutoStormSkydive = false, -- [DOESNT RENDER MAIN MAP] Complete storm challenge + buy all Storm Condors
 
     -- === PET PEN ===
     PetPen = false,
@@ -28,10 +30,10 @@ getgenv().VO_CONFIG = {
     -- === PET RELEASER ===
     PetReleaser = false,
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {"Stygian Owl", "Pomeranian"}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
+    ExcludeReleasePets = {}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
     ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
-    ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+    ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
     AgePets = false,
@@ -44,12 +46,12 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"River Otter"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"River Otter", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
     BuyBoxes = false,
-    BoxName = "Oakee Box",   -- Name of the box to buy/open
-    OpenBoxes = true,
+    BoxName = "Box Name",   -- Name of the box to buy/open
+    OpenBoxes = false,
 
     -- === LURE ===
     BaitName = "Bait Name",

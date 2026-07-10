@@ -45,7 +45,7 @@ getgenv().VO_CONFIG = {
     AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
 
     -- === BUY PETS ===
-    BuyPets = true,
+    BuyPets = false,
     BuyPetName = {"Forest Sprite", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===

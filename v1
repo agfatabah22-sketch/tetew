@@ -4,12 +4,12 @@ getgenv().VO_CONFIG = {
     DeviceName = "",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
-    EggFarm = false,
+    PotFarm = false,
+    EggFarm = true,
     PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
+    EggName = {"Crystal Egg", "Cracked Egg"},  -- Priority order: first egg tried, then second, etc.
     PetFarmList = {"River otter"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "2D Kitty",
 
@@ -22,15 +22,15 @@ getgenv().VO_CONFIG = {
     AutoStormSkydive = false, -- [DOESNT RENDER MAIN MAP] Complete storm challenge + buy all Storm Condors
 
     -- === PET PEN ===
-    PetPen = false,
-    CustomPenEggs = {"Egg Name"},
+    PetPen = true,
+    CustomPenEggs = {"Cracked Egg"},
     CustomPenPets = {},
-    PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
+    PrioritizePetPenTypes = {"Egg"},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
     PetReleaser = false,
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
+    ExcludeReleasePets = {"Stygian Owl"}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
     ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
     ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)

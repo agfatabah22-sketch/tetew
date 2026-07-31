@@ -4,8 +4,8 @@ getgenv().VO_CONFIG = {
     DeviceName = "",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
-    EggFarm = false,
+    PotFarm = false,
+    EggFarm = true,
     PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear

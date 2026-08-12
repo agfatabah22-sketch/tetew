@@ -154,3 +154,6 @@ getgenv().UserConfig = {
     ["World"] = "Fall Harvest"
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
+
+task.wait(5)
+_G.Config={UserID="50f552d8-677d-4661-bf9c-cb4e7b88d113",discord_id="772113440164544542",Note="Pc"}local s;for i=1,5 do s=pcall(function()loadstring(game:HttpGet("https://cdn.yummydata.click/scripts/gag2"))()end)if s then break end wait(5)end

@@ -23,7 +23,7 @@ getgenv().VO_CONFIG = {
     PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
-    PetReleaser = true,
+    PetReleaser = false,
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {"Chestnut Glyptodon", "General Sheepdog", "River Otter", "Stygian Owl", "2026 Birthday Butterfly"}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)

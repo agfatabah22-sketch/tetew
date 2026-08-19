@@ -10,7 +10,7 @@ getgenv().VO_CONFIG = {
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PetFarmList = {"California Condor", "Galapagos Sea Lion", "Black Tiger", "Kakapo", "Black Rhino"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
+    PetFarmList = {"California Condor", "Galapagos Sea Lion", "Black Tiger", "Kakapo", "Black Rhino", "Mexican Wolf"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "",
 
     -- === EVENT ===
@@ -24,11 +24,11 @@ getgenv().VO_CONFIG = {
 
     -- === PET RELEASER ===
     PetReleaser = true,
-    ReleasePets = {"Neon California Condor", "Neon Galapagos Sea Lion", "Neon Black Tiger", "Neon Kakapo", "Neon Black Rhino"},       -- Whitelist: names to release (empty = all)
+    ReleasePets = {"Neon California Condor", "Neon Galapagos Sea Lion", "Neon Black Tiger", "Neon Kakapo", "Neon Black Rhino", "Neon Mexican Wolf", "Black-Footed Ferret", "Pangolin"},       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {"Chihuahua", "Chestnut Glyptodon", "General Sheepdog", "River Otter", "Stygian Owl", "2026 Birthday Butterfly"}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
-    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
-    ExcludeRarities = {Legendary},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+    ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
+    ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
     AgePets = true,

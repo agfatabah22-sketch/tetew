@@ -4,9 +4,9 @@ getgenv().VO_CONFIG = {
     DeviceName = "new",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
+    PotFarm = false,
     EggFarm = false,
-    PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
+    PetFarm = true, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
@@ -18,7 +18,7 @@ getgenv().VO_CONFIG = {
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Crystal Egg"},
+    CustomPenEggs = {"Endangered Egg"},
     CustomPenPets = {},
     PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
 

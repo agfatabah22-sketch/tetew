@@ -51,7 +51,7 @@ getgenv().VO_CONFIG = {
     },
     ReleaseTypes = {"Neon", "Mega"},
     ReleaseRarities = {},
-    ExcludeRarities = {},
+    ExcludeRarities = {"Legendary"},
 
     -- === AGE PETS ===
     AgePets = true,

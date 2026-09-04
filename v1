@@ -1,74 +1,235 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "CjHWNyzudDsRcLKsS3LH7nVa6aMVH2j5ehQD90owvZM",
-    DeviceName = "",
+    DeviceName = "puqi",
 
-    -- === MAIN FARM (choose one mode) ===
+    -- === MAIN FARM ===
     PotFarm = true,
     EggFarm = false,
-    PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
-    KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
-    KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PetFarmList = {}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
-    PrioritizePet = "",
+    PetFarm = true,
+    KeepEggFarm = false,
+    KeepPetFarm = true,
+    EggName = {"Egg Name"},
 
-    -- === EVENT ===
-    AutoBeeGame = false,       -- Bees Wagon 2026: hand in bouquets, plant/buy seeds, claim pass
+    PetFarmList = {
+     -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Ultra-Rare Pet
+    "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+    "Pangolin",
+
+       -- Legendary Pet
+        "Huntsman Robin",
+		"Three Blind Mice",        
+		"Purrowl"
+    },
+
+    PrioritizePet = "2D Kitty",
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg"},
-    CustomPenPets = {"Blue Whale", "Purrowl", "Sea Turtle", "Chihuahua"},
-    PrioritizePetPenTypes = {"Egg"},  -- "Egg", "Normal", "Neon" (empty = all)
+    CustomPenEggs = {"Fairytale Egg", "Crystal Egg"},
+
+    CustomPenPets = {
+     -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Ultra-Rare Pet
+    "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+    "Pangolin",
+
+       -- Legendary Pet
+        "Huntsman Robin",
+		"Three Blind Mice",        
+		"Purrowl"
+    },
+
+    PrioritizePetPenTypes = {"Egg"},
 
     -- === PET RELEASER ===
-    PetReleaser = false,
-    ReleasePets = {},       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {"Pomeranian", "Chihuahua"}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
-    ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
-    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
-    ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+    PetReleaser = true,
+
+    ReleasePets = {
+        -- Neon variants
+        "Neon California Condor",
+        "Neon Galapagos Sea Lion",
+        "Neon Black Tiger",
+        "Neon Kakapo",
+        "Neon Black Rhino",
+        "Neon Mexican Wolf",
+        "Neon Black-Footed Ferret",
+        "Neon Pangolin",
+	    	"Neon Pinkypillar",
+	    	"Neon Ms. Muffet",
+	    	"Neon Princess Mare",
+	    	"Neon Budgie Witch",
+	    	"Neon Clumpty",
+	    	"Neon Granny Wolf",
+	    	"Neon Crimson Cape",
+
+        -- Normal variants
+        "Abyssinian Cat",
+        "Ocelot",
+        "Orangutan",
+        "Parakeet",
+        "Zebra",
+        "Badger",
+        "Corgi",
+        "Ginger Cat",
+        "Grinmoire",
+        "Orca",
+        "Pomeranian",
+        "Ribbon Seal",
+        "Robot",
+        "Starfish",
+        "Swordfish",
+        "Toucan",
+		"Gold Mahi Mahi",
+    },
+
+    ExcludeReleasePets = {
+        "Dango Penguins",
+        "Dragonfruit Fox",
+        "Silverback Gorilla",
+		"Blue Whale",
+		"Sea Turtle",
+		"Alicorn",
+		"Dragonfly",
+		"Ancient Dragon",
+    "Strawberry Tortle",
+		"Kiwi Kiwi",
+		"2D Kitty",
+		"2D Doggy",
+		"Huntsman Robin",
+		"Three Blind Mice",		
+        "Chihuahua",
+      "Little Lamb"
+    },
+
+    ReleaseTypes = {},	
+    ReleaseRarities = {},
+    ExcludeRarities = {"Legendary"},
 
     -- === AGE PETS ===
-    AgePets = false,
-    AgePetsNames = {},
-    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
+    AgePets = true,
+
+    AgePetsNames = {
+     -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Ultra-Rare Pet
+    "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+    "Pangolin",
+
+       -- Legendary Pet
+        "Huntsman Robin",
+		"Three Blind Mice",        
+		"Purrowl"
+    },
+
+    AgePetsTypes = {"Normal"},
 
     -- === AUTO FUSE ===
     AutoFuse = true,
-    AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
+    AutoFuseBlacklist = {},
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Fairytale Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Fairytale Egg", "Crystal Egg"},
 
     -- === BOXES ===
-    BuyBoxes = false,
-    BoxName = {"Box Name"},   -- Boxes to buy when BuyBoxes is true
-    OpenBoxes = {"Box Name"}, -- Box names to open from inventory
+    BuyBoxes = true,
+    BoxName = "2D Box",
+    OpenBoxes = true,
 
     -- === LURE ===
-    BaitName = "Bait Name",
+    BaitName = "ice_dimension_2025_ice_soup_bait",
 
     -- === AUTO TRADE ===
     AutoTrade = false,
-    ReceiverUsernames = {},
+	ReceiverUsernames = {},
+
     TradeItemList = {
-         pets = {"Dog","Neon Cat"}
-    }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
-    TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
+        pets = {"Crystal Egg"}
+    },
+
+    TradePetType = {},
 
     -- === CASH TRANSFER ===
     CashTransfer = false,
-    TransferMethods = {"mannequin"},  -- Current Methods: "mannequin"
+    TransferMethods = {},
     TransferAccount = "",
 
-    -- === DISCORD WEBHOOK ===
+        -- === DISCORD WEBHOOK ===
     WebhookEnabled = false,
-    WebhookURL = "",
-    WebhookPets = {},  -- Pet names to send (empty = all)
+    WebhookURL = "https://discord.com/api/webhooks/1521141072917434370/W3PaD0c85z-OcG65xELZjGlljPOP3OBgZbkvSKK03-OMuXmKTeG4WEJwE-nxbnTIFPuJ",
+    WebhookPets = {
+        "Dragonfruit Fox",
+        "Dango Penguins",
+        "Silverback Gorilla",
+        "Velocirooster",
+        "Sushi Penguin",
+        "Tealwood Monster",
+        "Emberlight",
+        "Rainbow Trout",
+	"Strawberry Tortle"
+    },
 
     ExtraOpti = false
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
+
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
+))()

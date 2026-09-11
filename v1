@@ -46,7 +46,7 @@ getgenv().VO_CONFIG = {
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg"},
+    CustomPenEggs = {"Fairytale Egg", "Endangered Egg", "Cracked Egg"},
 
     CustomPenPets = {
      -- Common Pet
@@ -120,6 +120,11 @@ getgenv().VO_CONFIG = {
         "Swordfish",
         "Toucan",
 		"Gold Mahi Mahi",
+        "Ant",
+        "Mouse",
+        "Camel",
+        "Donkey",
+        "Poodle",
     },
 
     ExcludeReleasePets = {
@@ -188,6 +193,10 @@ getgenv().VO_CONFIG = {
     -- === BUY PETS ===
     BuyPets = true,
     BuyPetName = {"Fairytale Egg", "Crystal Egg"},
+
+    -- === STAR REWARDS SHOP ===
+    BuyStarRewards = true,
+    StarRewardBuyList = {"Gemstone Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,

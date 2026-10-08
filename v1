@@ -36,6 +36,7 @@ getgenv().VO_CONFIG = {
 		"California Condor",
 		"Galapagos Sea Lion",
         "Jacobin Pigeon",
+        "Mummy Spider"
 
        -- Uncommon Pet
 		"Black Tiger",
@@ -174,7 +175,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Fairytale Egg", "Crystal Egg",},
+    BuyPetName = {"Jacobin Pigeon", "Crystal Egg",},
 
     -- === STAR REWARDS SHOP ===
     BuyStarRewards = true,

@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "CjHWNyzudDsRcLKsS3LH7nVa6aMVH2j5ehQD90owvZM",
-    DeviceName = "puqi",
+    DeviceName = "dolphin",
 
     -- === MAIN FARM ===
     PotFarm = true,
@@ -13,32 +13,7 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
      -- Common Pet
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion",
-
-       -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Rare Pet
-		"Mexican Wolf",
-		"Black Rhino",
-		"Clumpty",
-		"Granny Wolf",
-
-        -- Ultra-Rare Pet
-    "Black-Footed Ferret",
-		"Crimson Cape",
-		"Little Lamb",
-    "Pangolin",
-
-       -- Legendary Pet
-		"Three Blind Mice",        
-		"Purrowl"
+		"Jacobin Pigeon",
     },
 
     PrioritizePet = "2D Kitty",
@@ -60,6 +35,7 @@ getgenv().VO_CONFIG = {
 		"Ms. Muffet",
 		"California Condor",
 		"Galapagos Sea Lion",
+        "Jacobin Pigeon",
 
        -- Uncommon Pet
 		"Black Tiger",
@@ -84,10 +60,10 @@ getgenv().VO_CONFIG = {
 		"Purrowl"
     },
 
-    PrioritizePetPenTypes = {"Egg"},
+    PrioritizePetPenTypes = {"Neon"},
 
     -- === PET RELEASER ===
-    PetReleaser = true,
+    PetReleaser = false,
 
     ReleasePets = {
         -- Neon variants
@@ -164,6 +140,7 @@ getgenv().VO_CONFIG = {
 		"Ms. Muffet",
 		"California Condor",
 		"Galapagos Sea Lion",
+        "Jacobin Pigeon",
 
        -- Uncommon Pet
 		"Black Tiger",

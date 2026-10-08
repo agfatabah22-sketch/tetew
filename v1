@@ -13,7 +13,7 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
      -- Common Pet
-		"Jacobin Pigeon",
+		"Jacobin Pigeon"
     },
 
     PrioritizePet = "2D Kitty",
@@ -36,7 +36,7 @@ getgenv().VO_CONFIG = {
 		"California Condor",
 		"Galapagos Sea Lion",
         "Jacobin Pigeon",
-        "Mummy Spider"
+        "Mummy Spider",
 
        -- Uncommon Pet
 		"Black Tiger",
@@ -175,7 +175,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Jacobin Pigeon", "Crystal Egg",},
+    BuyPetName = {"Jacobin Pigeon", "Crystal Egg"},
 
     -- === STAR REWARDS SHOP ===
     BuyStarRewards = true,

@@ -13,7 +13,8 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
      -- Common Pet
-		"Jacobin Pigeon"
+		"Jacobin Pigeon",
+        "Skelicorn"
     },
 
     PrioritizePet = "2D Kitty",
@@ -31,37 +32,11 @@ getgenv().VO_CONFIG = {
 
     CustomPenPets = {
      -- Common Pet
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion",
-        "Jacobin Pigeon",
-        "Mummy Spider",
+        "Skelicorn"
 
-       -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Rare Pet
-		"Mexican Wolf",
-		"Black Rhino",
-		"Clumpty",
-		"Granny Wolf",
-
-        -- Ultra-Rare Pet
-    "Black-Footed Ferret",
-		"Crimson Cape",
-		"Little Lamb",
-    "Pangolin",
-
-       -- Legendary Pet
-		"Three Blind Mice",        
-		"Purrowl"
     },
 
-    PrioritizePetPenTypes = {"Neon"},
+    PrioritizePetPenTypes = {"Normal"},
 
     -- === PET RELEASER ===
     PetReleaser = false,
@@ -137,34 +112,7 @@ getgenv().VO_CONFIG = {
 
     AgePetsNames = {
      -- Common Pet
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion",
-        "Jacobin Pigeon",
-
-       -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Rare Pet
-		"Mexican Wolf",
-		"Black Rhino",
-		"Clumpty",
-		"Granny Wolf",
-
-        -- Ultra-Rare Pet
-    "Black-Footed Ferret",
-		"Crimson Cape",
-		"Little Lamb",
-    "Pangolin",
-
-       -- Legendary Pet
-        "Huntsman Robin",
-		"Three Blind Mice",        
-		"Purrowl"
+		"Skelicorn"
     },
 
     AgePetsTypes = {"Normal"},

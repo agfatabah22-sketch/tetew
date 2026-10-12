@@ -30,7 +30,7 @@ getgenv().VO_CONFIG = {
 
     CustomPenPets = {
      -- Common Pet
-        "Jacobin Pigeon"
+        "Jacobin Pigeon",
         "Skelicorn"
 
     },

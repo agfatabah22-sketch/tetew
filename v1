@@ -13,7 +13,6 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
      -- Common Pet
-		"Jacobin Pigeon",
         "Skelicorn"
     },
 
@@ -30,12 +29,11 @@ getgenv().VO_CONFIG = {
 
     CustomPenPets = {
      -- Common Pet
-        "Jacobin Pigeon",
         "Skelicorn"
 
     },
 
-    PrioritizePetPenTypes = {"Normal"},
+    PrioritizePetPenTypes = {"ALL"},
 
     -- === PET RELEASER ===
     PetReleaser = false,

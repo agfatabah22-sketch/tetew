@@ -1,116 +1,46 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "CjHWNyzudDsRcLKsS3LH7nVa6aMVH2j5ehQD90owvZM",
-    DeviceName = "dolphin",
+    DeviceName = "test",
 
     -- === MAIN FARM ===
     PotFarm = true,
-    EggFarm = false,
-    PetFarm = true,
+    EggFarm = true,
+    PetFarm = false,
     KeepEggFarm = false,
     KeepPetFarm = true,
-    EggName = {"Egg Name"},
+    EggName = {"Cracked Egg"},
 
-    PetFarmList = {
-     -- Common Pet
-        "Skelicorn"
-    },
+    PetFarmList = {},
 
     PrioritizePet = "2D Kitty",
 
     -- === HALLOWEEN 2026 EVENT ===
     AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
-    GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
+    GhostClustersMinigame = true,     -- Ghost Gallery minigame (on unless set to false; farm tasks pause while it runs; drops Crypt Keys)
     HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
+    SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg", "Endangered Egg", "Cracked Egg"},
+    CustomPenEggs = {"Cracked Egg"},
 
-    CustomPenPets = {
-     -- Common Pet
-        "Skelicorn"
-
-    },
+    CustomPenPets = {},
 
     PrioritizePetPenTypes = {"ALL"},
 
     -- === PET RELEASER ===
-    PetReleaser = false,
+    PetReleaser = true,
 
-    ReleasePets = {
-        -- Neon variants
-        "Neon California Condor",
-        "Neon Galapagos Sea Lion",
-        "Neon Black Tiger",
-        "Neon Kakapo",
-        "Neon Black Rhino",
-        "Neon Mexican Wolf",
-        "Neon Black-Footed Ferret",
-        "Neon Pangolin",
-	    	"Neon Pinkypillar",
-	    	"Neon Ms. Muffet",
-	    	"Neon Princess Mare",
-	    	"Neon Budgie Witch",
-	    	"Neon Clumpty",
-	    	"Neon Granny Wolf",
-	    	"Neon Crimson Cape",
-
-        -- Normal variants
-        "Abyssinian Cat",
-        "Ocelot",
-        "Orangutan",
-        "Parakeet",
-        "Zebra",
-        "Badger",
-        "Corgi",
-        "Ginger Cat",
-        "Grinmoire",
-        "Orca",
-        "Pomeranian",
-        "Ribbon Seal",
-        "Robot",
-        "Starfish",
-        "Swordfish",
-        "Toucan",
-		"Gold Mahi Mahi",
-        "Ant",
-        "Mouse",
-        "Camel",
-        "Donkey",
-        "Poodle",
-    },
-
-    ExcludeReleasePets = {
-        "Dango Penguins",
-        "Dragonfruit Fox",
-        "Silverback Gorilla",
-		"Blue Whale",
-		"Sea Turtle",
-		"Alicorn",
-		"Dragonfly",
-		"Ancient Dragon",
-    "Strawberry Tortle",
-		"Kiwi Kiwi",
-		"2D Kitty",
-		"2D Doggy",
-		"Huntsman Robin",
-		"Three Blind Mice",		
-        "Chihuahua",
-      "Little Lamb"
-    },
-
+    ReleasePets = {},
     ReleaseTypes = {},	
-    ReleaseRarities = {},
+    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare"},
     ExcludeRarities = {"Legendary"},
 
     -- === AGE PETS ===
     AgePets = true,
 
-    AgePetsNames = {
-     -- Common Pet
-		"Skelicorn"
-    },
+    AgePetsNames = {},
 
     AgePetsTypes = {"Normal"},
 
@@ -120,7 +50,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Skelicorn", "Crystal Egg"},
+    BuyPetName = {"Skelicorn", "Crystal Egg", "Cracked Egg"},
 
     -- === STAR REWARDS SHOP ===
     BuyStarRewards = true,

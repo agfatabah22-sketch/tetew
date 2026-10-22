@@ -65,14 +65,14 @@ getgenv().VO_CONFIG = {
     BaitName = "ice_dimension_2025_ice_soup_bait",
 
     -- === AUTO TRADE ===
-    AutoTrade = false,
-	ReceiverUsernames = {},
+    AutoTrade = true,
+	ReceiverUsernames = {"tabahstore01", "tabahstore02", "tabahstore03", "tabahstore04", "tabahstore05"},
 
     TradeItemList = {
-        pets = {"Crystal Egg"}
+        pets = {"Crystal Egg", "Skelicorn"}
     },
 
-    TradePetType = {},
+    TradePetType = {"ALL"},
 
     -- === CASH TRANSFER ===
     CashTransfer = false,

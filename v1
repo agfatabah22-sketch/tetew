@@ -50,7 +50,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Skelicorn", "Crystal Egg", "Cracked Egg"},
+    BuyPetName = {"Stray Cat Dragon", "Crystal Egg", "Cracked Egg"},
 
     -- === STAR REWARDS SHOP ===
     BuyStarRewards = true,
@@ -69,7 +69,7 @@ getgenv().VO_CONFIG = {
 	ReceiverUsernames = {"tabahstore01", "tabahstore02", "tabahstore03", "tabahstore04", "tabahstore05"},
 
     TradeItemList = {
-        pets = {"Crystal Egg", "Skelicorn"}
+        pets = {"Crystal Egg", "Stray Cat Dragon"}
     },
 
     TradePetType = {"ALL"},

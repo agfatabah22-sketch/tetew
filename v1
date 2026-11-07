@@ -87,7 +87,7 @@ getgenv().VO_CONFIG = {
 
     -- === LURE ===
     BaitName = "Cyclone Sponge Bait", -- "Storm Chip Cookie Bait" or "Cyclone Sponge Bait"
-    LightningFarm = false,
+    LightningFarm = true,
 
     -- === AUTO TRADE ===
     AutoTrade = true,
